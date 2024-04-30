@@ -13,7 +13,7 @@ def run_simulation(dataset: str, seed: int):
         dataset (tuple): Tuple containing the path to the dataset file, the algorithm name and a boolean indicating if some mapped servers should not host container registries. 
         seed (int): Seed value for EdgeSimPy.
     """
-    cmd = f"/home/dellcloud/.cache/pypoetry/virtualenvs/p2p-enhanced-registry-provisioning-7g8CcTQ_-py3.10/bin/python -m simulation -a {dataset[1]} -d {dataset[0]} -s {seed} -n 3600"
+    cmd = f"python -m simulation -a {dataset[1]} -d {dataset[0]} -s {seed} -n 3600"
     print(f"    cmd = {cmd}")
 
     return Popen(cmd.split(" "), stdout=DEVNULL, stderr=DEVNULL)
