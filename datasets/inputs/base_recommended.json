@@ -24,7 +24,7 @@
             {
                 "is_implemented": false,
                 "name": "sgi",
-                "number_of_objects": 8,
+                "number_of_objects": 6,
                 "cpu": 32,
                 "memory": 32768,
                 "disk": 131072
@@ -32,7 +32,7 @@
             {
                 "is_implemented": false,
                 "name": "hpe",
-                "number_of_objects": 8,
+                "number_of_objects": 6,
                 "cpu": 48,
                 "memory": 65536,
                 "disk": 131072
@@ -40,9 +40,17 @@
             {
                 "is_implemented": false,
                 "name": "acer",
-                "number_of_objects": 8,
+                "number_of_objects": 6,
                 "cpu": 36,
                 "memory": 65536,
+                "disk": 131072
+            },
+            {
+                "is_implemented": false,
+                "name": "raspberry_pi_5",
+                "number_of_objects": 6,
+                "cpu": 4,
+                "memory": 8192,
                 "disk": 131072
             }
         ]
