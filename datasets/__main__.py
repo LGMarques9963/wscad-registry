@@ -59,7 +59,8 @@ def main(seed: int, input_filename: str, output_filename: str, registry_provisio
         for _ in range(edge_server_spec["number_of_objects"]):
             edge_server = create_edge_server(
                 specification=edge_server_spec, 
-                coordinates=edge_server_coordinates.pop(0)
+                coordinates=edge_server_coordinates.pop(0),
+                # name=f"{edge_server_spec['name']}_{_ + 1}"
             )
             connect_edge_server_to_base_station(edge_server)
 
